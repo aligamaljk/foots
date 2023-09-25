@@ -1,0 +1,40 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1.5rem;
+  li {
+    display: inline-block;
+  }
+  a {
+    font-size: 1.8rem;
+    display: inline-block;
+  }
+}
+.footer {
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 3rem 0rem;
+  p{
+    color: #717171;
+  }
+  .copyright {
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+  }
+}

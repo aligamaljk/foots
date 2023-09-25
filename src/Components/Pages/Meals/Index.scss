@@ -1,0 +1,149 @@
+.meals__page {
+	padding: 5rem 0;
+}
+.text {
+	margin-top: 1rem;
+}
+.meals_container {
+	margin-top: 5rem;
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.pageWrapper{
+	padding: 10rem 0;
+	.meals_topContainer {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 5rem;
+		.img{
+			.ant-image{
+				img{
+					position: absolute;
+					inset: 0px;
+					box-sizing: border-box;
+					padding: 0px;
+					border: none;
+					margin: auto;
+					display: block;
+					width: 0px;
+					height: 0px;
+					min-width: 100%;
+					max-width: 100%;
+					min-height: 100%;
+					max-height: 100%;
+				}
+			}
+		}
+		.meals_info {
+			padding-top: 2rem;
+			.Title_title{
+				font-size: clamp(2rem,5vw,4rem);
+                font-family: Mirza,sans-serif;
+                line-height: .9em;
+				color: #9f9f9f;
+			}
+			.PointText_pointText{
+				padding-top: 1rem;
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				.PointText_circle{
+                    width: 8px;
+                    min-width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background-color: var(--primary-color);
+                    display: inline-block;
+				}
+				.Text_text_p{
+					font-size: 1.7rem;
+					color: var(--text-color);
+					 font-family: Poppins,sans-serif;
+					color: #717171;
+				}
+				}
+				.Button_button {
+					padding: 1rem 2rem;
+					font-size: 1.8rem;
+					color: var(--white);
+					border: none;
+					border-radius: 6px;
+					background-color: #e85d04;
+					margin-top: 2rem;
+					cursor: pointer;
+			}
+		}
+	}
+  }
+  .meals_ingredientsTable{
+	margin: 50px 0;
+	.Title_title{
+		font-size: clamp(2rem,5vw,4rem);
+		font-family: Mirza,sans-serif;
+		line-height: .9em;
+		color: #9f9f9f;
+	}
+	table{
+		margin-top: 20px;
+		max-width: 500px;
+        width: 100%;
+        border-spacing: 0;
+		tr{
+			width: 100%;
+            background-color: #2a2b2e;
+			cursor: pointer;
+			td{
+				padding: 0.5rem;
+			}
+			&:nth-child(2n) {
+				background-color: #303134;
+			}
+			&:hover{
+				background-color: #191a1c;
+			}
+		}
+		.Text_text_p{
+			font-size: 1.7rem;
+			color: var(--text-color);
+			 font-family: Poppins,sans-serif;
+			color: #717171;
+		}
+	}
+  }
+  .instructions{
+	.Title_title{
+		font-size: clamp(2rem,5vw,4rem);
+		font-family: Mirza,sans-serif;
+		line-height: .9em;
+		color: #9f9f9f;
+	}
+	.PointText_pointText{
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 1rem;
+		.PointText_circle{
+			margin-top: 1rem;
+			width: 8px;
+			min-width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background-color: var(--primary-color);
+			display: inline-block;
+		}
+		.Text_text_p{
+			font-size: 1.7rem;
+			color: var(--text-color);
+			 font-family: Poppins,sans-serif;
+			color: #717171;
+		}
+    }
+  }
+  .Text_text_green{
+	margin-top: 2rem;
+    color: #00b300;
+	font-size: 1.6rem;
+    font-family: Poppins,sans-serif;
+  }

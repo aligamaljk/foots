@@ -1,0 +1,14 @@
+.item {
+	padding: 1rem 2rem;
+	background-color: var(--secondary-color);
+	display: inline-block;
+	font-size: 1.8rem;
+	color: var(--text-color);
+	border-radius: 6px;
+	cursor: pointer;
+	border: 2px solid var(--secondary-color);
+    transition: 0.5s;
+}
+.item_selected {
+	border: 2px solid var(--primary-color);
+}

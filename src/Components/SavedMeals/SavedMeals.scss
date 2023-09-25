@@ -1,0 +1,47 @@
+.savedMeals_pageWrapper{
+    padding: 6rem 0;
+    .Title_title{
+        font-size: clamp(2rem,5vw,4rem);
+        font-family: Mirza,sans-serif;
+        line-height: .9em;
+        color: #9f9f9f;
+        margin-bottom: 2rem;
+    }
+    .savedMeals_list_container {
+        display: grid;
+        grid-gap: 2rem;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+        .savedMeals_singleMeal {
+            padding: 2rem;
+            background-color: #393b40;
+            border-radius: 6px;
+            .Title_title{
+                margin-bottom: 1rem;
+                text-transform: capitalize;
+                font-size: clamp(1.4rem,3vw,1.6rem);
+                color: #9f9f9f;
+            }
+            .PointText_pointText{
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 1rem;
+                .PointText_circle{
+                    margin-top: 0.9rem;
+                    width: 8px;
+                    min-width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background-color: var(--primary-color);
+                    display: inline-block;
+                }
+                .Text_text{
+                    font-size: 1.6rem;
+                    color: #9f9f9f;
+                    font-family: Poppins,sans-serif;
+                }
+                }
+            }
+        }
+    }
