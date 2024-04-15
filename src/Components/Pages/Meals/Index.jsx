@@ -1,7 +1,7 @@
 
 import { useQuery } from '@tanstack/react-query'
 import SearchBar from '../../Mealsage/SearchBar'
-import "./Index.scss"
+import './Index.scss';
 import axios from 'axios'
 import Categories from '../../Categories/Categories'
 import { useEffect, useState } from 'react'

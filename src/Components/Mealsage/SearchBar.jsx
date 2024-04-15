@@ -1,4 +1,6 @@
 import "./SearchBar.scss"
+import PropTypes from 'prop-types';
+
 function SearchBar({searchText,setSearchText}) {
     return (
         <>
@@ -17,3 +19,8 @@ function SearchBar({searchText,setSearchText}) {
     );
   }
 export default SearchBar
+
+SearchBar.propTypes = {
+  searchText: PropTypes.string.isRequired,
+  setSearchText: PropTypes.func.isRequired,
+};

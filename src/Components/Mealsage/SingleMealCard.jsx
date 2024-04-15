@@ -2,7 +2,7 @@
 import { Image } from 'antd';
 import './SingleMealCard.module.scss';
 import { Link } from 'react-router-dom';
-
+import PropTypes from 'prop-types';
 function SingleMealCard({meal}) {
   return (
     <Link
@@ -19,3 +19,7 @@ function SingleMealCard({meal}) {
 }
 
 export default SingleMealCard;
+
+SingleMealCard.propTypes = {
+  meal: PropTypes.object.isRequired,
+};
