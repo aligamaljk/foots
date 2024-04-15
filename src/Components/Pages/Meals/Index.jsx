@@ -13,7 +13,6 @@ return data.categories
 }
 
 const getMeals = async ({queryKey})=>{
-  // console.log(queryKey);
 const {data} = await axios.get(`/filter.php?c=${queryKey[1]}`)
 return data?.meals || []
 }
@@ -29,7 +28,6 @@ const Index = () => {
     queryKey:"categories",
     queryFn: getCategories
   })
-  // console.log(categories);
   const {data,isLoading,isError} = useQuery({
     queryKey:["mealsByCategory",selectedCategory ],
     queryFn: getMeals
@@ -38,8 +36,6 @@ const Index = () => {
     queryKey:["mealsByQuery", query],
     queryFn: getQueryMeals
   })
-  // console.log(data);
-  // console.log(categories[0].strCategory);
   useEffect(()=>{
     if(categories){
       setSelectedCategory(categories[0].strCategory)

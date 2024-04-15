@@ -5,7 +5,6 @@ import { Outlet } from "react-router";
 const Layouts = () => {
   return (
     <>
-
       <div className="container Layout_container__hieOS">
         <Navbar />
         <Outlet />
