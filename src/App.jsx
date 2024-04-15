@@ -4,7 +4,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "react-hot-toast";
 import HeroSection from "./Components/Home/HeroSection";
 import { Route, Routes } from "react-router";
-import Index from "./Components/Pages/Meals";
+import Index from './Components/Pages/Meals/index';
 import axios from "axios"
 import SingleMealPage from "./Components/Pages/Meals/SingleMealPage";
 import SavedMeals from "./Components/SavedMeals/SavedMeals";
