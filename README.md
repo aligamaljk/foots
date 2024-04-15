@@ -1,6 +1,6 @@
 # Foot
 
-<img src='./public/home.png'></img>
+<img src='./public/home.jpg'></img>
 
 ## Tools and libraries used
 
