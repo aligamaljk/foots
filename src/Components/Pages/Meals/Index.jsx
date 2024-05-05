@@ -20,7 +20,7 @@ const getQueryMeals = async ({queryKey})=>{
 const {data} = await axios.get(`/search.php?s=${queryKey[1]}`)
 return data?.meals || []
 }
-const Index = () => {
+export const Index = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [searchText, setSearchText] = useState("");
   const [query, setQuery] = useState("")
@@ -94,5 +94,3 @@ const Index = () => {
     </div>
   )
 }
-
-export default Index

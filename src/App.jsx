@@ -4,7 +4,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "react-hot-toast";
 import HeroSection from "./Components/Home/HeroSection";
 import {  useRoutes } from "react-router";
-import Index from "./Components/Pages/Meals";
+import {Index} from "./Components/Pages/Meals";
 import axios from "axios"
 import SingleMealPage from "./Components/Pages/Meals/SingleMealPage";
 import SavedMeals from "./Components/SavedMeals/SavedMeals";
@@ -16,11 +16,11 @@ const queryClient = new QueryClient();
 const AppRoutes = () => {
     const routes = useRoutes([
       {
-        path: "*",
+        path: '*',
         element: <h1> Page Not Found </h1>,
       },
       {
-        path: "/",
+        path: '/',
         element: <Layouts />,
         children: [
           { index: true, element: <HeroSection /> },
