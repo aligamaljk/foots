@@ -3,7 +3,7 @@ import Layouts from "./Components/Layout/Layouts";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "react-hot-toast";
 import HeroSection from "./Components/Home/HeroSection";
-import { Route, Routes } from "react-router";
+import {  useRoutes } from "react-router";
 import Index from "./Components/Pages/Meals";
 import axios from "axios"
 import SingleMealPage from "./Components/Pages/Meals/SingleMealPage";
@@ -13,7 +13,27 @@ import SavedMeals from "./Components/SavedMeals/SavedMeals";
 axios.defaults.baseURL = "https://www.themealdb.com/api/json/v1/1"
 
 const queryClient = new QueryClient();
+const AppRoutes = () => {
+    const routes = useRoutes([
+      {
+        path: "*",
+        element: <h1> Page Not Found </h1>,
+      },
+      {
+        path: "/",
+        element: <Layouts />,
+        children: [
+          { index: true, element: <HeroSection /> },
+          { path: 'meals', element: <Index /> },
+          { path: 'meals/:Id', element: <SingleMealPage /> },
+          { path: 'savedMeals', element: <SavedMeals /> },
+        ],
+      },
+    ]);
+    return routes;
+}
 function App() {
+
   return (
     <>
       <QueryClientProvider client={queryClient}>
@@ -25,14 +45,7 @@ function App() {
             },
           }}
         />
-        <Routes>
-          <Route element={<Layouts />}>
-            <Route path="/" element={<HeroSection />} />
-            <Route path="meals" element={<Index />} />
-            <Route path="meals/:Id" element={<SingleMealPage />} />
-            <Route path="savedMeals" element={<SavedMeals />} />
-          </Route>
-        </Routes>
+        <AppRoutes />
       </QueryClientProvider>
     </>
   );

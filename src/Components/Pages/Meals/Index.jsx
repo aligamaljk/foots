@@ -47,14 +47,14 @@ const Index = () => {
         setQuery(searchText)
         setSelectedCategory("")
       }else{
-        setQuery("");
+        setQuery();
         if(categories){
           setSelectedCategory(categories[0].strCategory)
         }
       }
     }, 300); 
     return (()=>{
-      setQuery("");
+      setQuery();
       clearTimeout(timout)
     })
   },[searchText,categories])
