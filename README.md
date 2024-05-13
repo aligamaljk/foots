@@ -12,3 +12,8 @@
 -   react-router-dom
 -   react-icons
 -   vite
+
+
+## Performance
+
+<img src="./public/performance.jpg" ></img>
